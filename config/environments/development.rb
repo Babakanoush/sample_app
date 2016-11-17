@@ -26,6 +26,12 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+#we can use email previews, which are special URLs exposed by Rails to let us see what our email messages look like
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :test
+  host = 'rails-tutorial-babakanoush.c9users.io' # actual host of your development environment
+  config.action_mailer.default_url_options = { host: host, protocol: 'https' }
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
