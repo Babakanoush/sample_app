@@ -7,6 +7,12 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'bcrypt',         '3.1.11'
 #to make sample users with semi-realistic names and email addresses
 gem 'faker',          '1.6.6'
+#To handle an uploaded image and associate it with the Micropost model, we’ll use the CarrierWave image uploader. 
+gem 'carrierwave',             '0.11.2'
+#For completeness, we also the mini_magick and fog gems needed for image resizing and image upload in production.
+gem 'mini_magick',             '4.5.1'
+#For completeness, we also the mini_magick and fog gems needed for image resizing and image upload in production.
+gem 'fog',                     '1.38.0'
 #to paginate the users
 gem 'will_paginate',           '3.1.0'
 #configures will_paginate to use Bootstrap’s pagination styles
